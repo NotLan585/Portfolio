@@ -10,6 +10,7 @@
 
   <header>
     <h1><strong>Ian Allheim's Portfolio</strong></h1>
+    <div class="hide-on-desktop">Test mobile</div>
     <nav>
       <ul>
         <br><li><a href="#about">About Me</a></li></br>
@@ -200,7 +201,7 @@
     <br>
       <h3>PluralSight</h3>
       <br><a href="https://app.pluralsight.com/profile/Ian-Allheim" target="_blank">Link to my Profile</a></br>
-      <img src="Screenshot 2023-06-16 at 9.15.03 PM.png">
+      <img class="pluralsight" src="Screenshot 2023-06-16 at 9.15.03 PM.png">
     </br>
 
     <hr class="dashed">
@@ -267,6 +268,12 @@ body {
     padding: 0;
   }
   
+  @media screen and (max-width: 480px) {
+    .hide-on-desktop {
+      display: block;
+    }
+  }
+  
   @keyframes cloudAnimation {
     from {
       background-position: 0 0;
@@ -286,6 +293,11 @@ body {
     padding-top: 10px;
     text-indent: 50px;
   }
+    @media (min-width: 100px) {
+  .header {
+    size: inherit;
+    }
+  }
 
   ul {
     list-style: none;
@@ -304,7 +316,7 @@ body {
     text-decoration: none;
   }
 
-  li a:hover {
+  li a: hover {
     background-image: url('https://bigmemes.funnyjunk.com/thumbnails/comments/Everythings+just+fine+i+promise+_b33352f41ec16baf0916a4a2db384196.gif');
     background-size: inherit;
     background-position: center;
@@ -345,6 +357,11 @@ body {
     height: 500px;
   }
 
+  .pluralsight {
+    width: 800px;
+    height: 500px;
+  }
+
   hr.rounded2 {
     border-top: 8px solid #587f82;
     border-radius: 5px;
@@ -356,7 +373,7 @@ body {
   }
 
   .ian{
-    display:block;
+    display: block;
     margin: right;
     width: 25%;
   }
