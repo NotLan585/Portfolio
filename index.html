@@ -24,10 +24,13 @@
   <section id="about">
     <h2>About Me</h2>
     <p><br> I am very dedicated and I'm always looking to better myself.</br> 
-      <br>I'm very computer literate with a passion to always learn more. </br>
+      <br>I'm very computer literate with a passion to always learn more. 
+      </br>
       <br> I always strive to make the workplace motivated while still
-        keeping a professional environment.</br></p>
-  </section>
+        keeping a professional environment.</br>
+    </p>
+    <img class="ian" src="https://avatars.githubusercontent.com/u/37488663?v=4">    
+    </section>
 
       <hr class="rounded1">
 
@@ -38,6 +41,7 @@
       <h3><br>Bryx</br>
       Senior QA Engineer/SDET</h3>
       <div>
+        <a href="https://bryx.com/" target="_blank">Link to the company</a>
       </div>
       <p>
         August 2022 - Present
@@ -46,6 +50,7 @@
       <h3><br>Datto, Inc.</br>
       Senior Quality Assurance Engineer</h3>
       <div>
+        <a href="https://www.datto.com/" target="_blank">Link to the company</a>
       </div>
       <p>
         April 2022 - August 2022
@@ -78,6 +83,7 @@
       <h3><br>Unisys</br>
       Service Desk Level One</h3>
       <div>
+        <a href="https://www.unisys.com/" target="_blank">Link to the company</a>
       </div>
       <p>
         January 2014 - August 2015
@@ -91,6 +97,25 @@
     <h2>My Projects</h2>
 
     <div class="project">
+      <h3>Automation Data Graphing</h3>
+      <div>
+        <img class='pythonDataImage' src="Screenshot 2023-07-10 at 9.21.01 AM.png">
+        <img class='pythonDataImage' src="Screenshot 2023-07-10 at 9.20.52 AM.png">
+      </div>
+      <p>
+        This project was something that didn't need to be done, but I wanted to learn more about showing data in a easy to read way to whenever automation is ran. For this 
+        I created a slackbot and setup the appropriate token/webhooks to post the message. When running the automation for the suite, I setup a autouse fixture to capture data at the end 
+        of the test("passed/failed/skipped"/"Length of test in second") and used <a href='https://matplotlib.org/'>matplotlib</a> and plotted the data and subplots and used <a href='https://slack.dev/python-slack-sdk/'>slack_sdk</a> to upload the file and inlay it with the 
+        main suite results. For the suite results(For the nightly automation) when running the nightly I `| tee results.txt` all the output to a .txt file and set a `after_script` in the pipeline
+        to parse the file and use Slacks BlockKitBuilder to setup the payload to send the data of the outcome of the nightly automation.
+        <br></br>
+        I think the next thing I'll do for this project is more data such as amount of clicks or actions performed and continue to learn more about <a href='https://jupyter.org/'>Jupyter</a> 
+      </p>
+    </div>
+
+    <hr class="dashed">
+
+    <div class="project">
       <h3>Automating Pokemon Battles</h3>
       <span><a href='https://github.com/NotLan/PokemonBattle' target="_blank">Link to Project</a></span>
       <div>
@@ -100,8 +125,9 @@
       </div>
       <p>
         <br>This project was the first I used <a href="https://playwright.dev/python/" target="_blank">Playwright</a> and set it up to choose a random Pokemon to battle with and notate the statistics of the Pokemon to a .json file.</br>
-        This automation could be run headed/headless(Windowed or in the background). What I want to do as I learn more is use the data and show win/lose ratios and maybe 
-        the probability of a certain Pokemon winning a battle.
+        This automation could be run headed/headless(Windowed or in the background).
+        <br></br>
+        What I want to do as I learn more is use the data and show win/lose ratios and maybe the probability of a certain Pokemon winning a battle.
       </p>
     </div>
 
@@ -132,7 +158,9 @@
       </div>
       <p>
         Rock Paper Scissors was my first project, I wanted to create a game that would randomly select an option and give the user sass if they 
-        input an option wrong too many times. I may want to use the data of wins/ties/losses and graph them to the user for win/lose ratios and what option
+        input an option wrong too many times. 
+        <br></br>
+        I kinda want to use the data of wins/ties/losses and graph them to the user for win/lose ratios and what option
         had the best/worse result.
       </p>
     </div>
@@ -180,7 +208,7 @@
     <br>
       <h3>Codecedmy</h3>
       <br><a href="https://www.codecademy.com/profiles/iallheim" target="_blank">Link to Profile</a></br>
-      <img src="Screenshot 2023-06-20 at 2.22.40 PM.png">
+      <img src="Screenshot 2023-06-16 at 2.22.54 PM.png">
     </br>
     
   </section>
@@ -225,9 +253,6 @@
         </li>
       </br>
     </ul>
-  </div>
-  <div>
-    <img class="ian" src="https://avatars.githubusercontent.com/u/37488663?v=4">
   </div>
   </section>
 
@@ -310,6 +335,11 @@ body {
     height: 500px;
   }
 
+  .pythonDataImage {
+    width: 500px;
+    height: 500px;
+  }
+
   .rpsImages {
     width: 600px;
     height: 500px;
@@ -326,10 +356,9 @@ body {
   }
 
   .ian{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
+    display:block;
+    margin: right;
+    width: 25%;
   }
 
   section {
