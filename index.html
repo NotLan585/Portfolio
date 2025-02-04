@@ -1,501 +1,176 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDET Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-  <header>
-    <h1><strong>Ian Allheim's Portfolio</strong></h1>
-    <nav>
-      <ul>
-        <br><li><a href="#about">About Me</a></li></br>
-        <br><li><a href="#work">Work History</a></li></br>
-        <br><li><a href="#projects">My Projects</a></li></br>
-        <br><li><a href="#certifications">Certifications</a></li></br>
-        <br><li><a href="#contact">Contact Info</a></li></br>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <div class="logo">IA</div>
+    </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p><br> I am very dedicated and I'm always looking to better myself.</br> 
-      <br>I'm very computer literate with a passion to always learn more. 
-      </br>
-      <br> I always strive to make the workplace motivated while still
-        keeping a professional environment.</br>
-    </p>
-    <img class="ian" src="https://avatars.githubusercontent.com/u/37488663?v=4">    
+    <section class="hero">
+        <div class="text">
+            <h1>Ian <span class="highlight">Allheim</span>,<br> Sr Software Developer in Test</h1>
+        </div>
+        <div class="avatar"><img src="images/avatar.png"></div>
     </section>
 
-      <hr class="rounded1">
+    <section class="pages">
+        <div class="card"> 
+            <h3>About Me</h3>
+            <p>With years of experience in software testing, software quality assurance, and automation frameworks, I specialize in building robust testing solutions. My expertise spans across Python, JavaScript, and Node.js, where I have developed and implemented automated test suites to ensure the highest standards of software quality. I excel at identifying critical issues, breaking software, and streamlining processes to enhance overall efficiency and reliability. I thrive on automating anything I believe can be, constantly seeking ways to streamline and enhance workflows.</p>
+        </div>
+    </section>
 
-  <section id="work">
-    <h2>Work History</h2>
-    <div class="work">
-      <h3>Casana<br>Senior SDET</h3>
-      <div>
-          <a href="https://casanacare.com/" target="_blank">Link to the company</a>
-      </div>
-      <p>February 2024 - Present</p>
-          <ul>
-              <li>-Collaborate with our firmware and cloud development teams to ensure high quality software delivery.</li>
-              <li>-Lead the creation, maintenance, and execution of test cases, plans, and test suites in support of sprint work and release verification and validation.</li>
-              <li>-Develop and maintain automated tests targeted at both the API and UI levels. Utilized test management tools such as TestRail, Zephyr, Qase.</li>
-              <li>-Work with JIRA to coordinate work with software engineers, track bugs, and plan and track test case execution.</li>
-              <li>-Define/track and report on key quality metrics (e.g., find rate, closure rate, decay rate, defect density).</li>
-              <li>-Implement UI automated tests using frameworks such as Selenium or Playwright.</li>
-              <li>-Perform API testing using Postman.</li>
-              <li>-Influence tool selection and test case strategy.</li>
-              <li>-Drive continuous process improvement within the quality assurance process.</li>
-              <li>-Lead and mentor other team members to ensure consistency in the function and act as a team lead and first point of contact.</li>
-              <li>-Ensure quality activities align with and support the Casana Quality Management System.</li>
-              <li>-Other responsibilities as they arose.</li>
-          </ul>
-    <hr class="dashed">
-    <div class="work">
-      <h3><br>Bryx</br>Senior QA Engineer/SDET</h3>
-      <div><a href="https://bryx.com/" target="_blank">Link to the company</a></div>
-      <p>August 2022 -  Febuary 2024</p>
-        <ul>
-          <li>-My current role at Bryx is on the RMS team (Records Management System).</li>
-          <li>-Starting at Bryx, I initiated a scrum process with ClickUp (then migrated to Jira).</li>
-          <li>-Started a code review process with developers.</li>
-          <li>-Started an automation suite implementing Playwright (Python) to run on commits/nightly against our dev environment.</li>
-          <li>-Set up README.md for developers to set up and run against their localhost before code review.</li>
-          <li>-Frontend manual QA.</li>
-          <li>-API testing (using Postman and MongoDB).</li>
-          <li>-Mobile app testing with Swift (minimal experience).</li>
-          <li>-Storybook testing.</li>
-          <li>-Set up a custom Slackbot for the nightly automation with results.</li>
-          <li>-Created improvement/bug tickets with detailed reproduction steps.</li>
-          <li>-Implemented interactions with API to create/delete data for automation.</li>
-          <li>-Tagging/deploying to production.</li>
-          <li>-Setting up .gitlab-ci.yml and nightly pipeline schedules in GitLab.</li>
-        </ul>    
-    <hr class="dashed">
-    <div class="work">
-      <h3><br>Datto, Inc.</br>
-      Senior Quality Assurance Engineer</h3>
-      <div>
-        <a href="https://www.datto.com/" target="_blank">Link to the company</a>
-      </div>
-      <p>
-        August 2021 - August 2022
-      </p>
-      <ul>
-        <li>-Contributed to root cause evaluation to mitigate risk and foster continuous improvement. Performed root cause analysis for detected faults and developed corrective actions. Designed and updated test cases to complete consistent manual tests.</li>
-        <li>-Created and optimized automated testing tools for repetitive tasks.</li>
-        <li>-Wrote and updated manual test cases for team use, maintaining optimal organization for maximum productivity. Worked with off-site teams to complete timely tests and facilitate smooth product releases.</li>
-        <li>-Worked with Agile and Scrum methodologies to accomplish project milestones and meet demanding timelines. Produced test scripts for new automated software testing rounds.</li>
-        <li>-Helped with E2E (End to End) testing with features that span multiple repos and platforms. Performed multiple types of security testing (XSS, Broken Access Control, SQL Injection).</li>
-        <li>-Held developer meetings to go over test cases attached to tickets (at the beginning of the sprint). Ran/contributed to the Automation Guild.</li>
-    </ul>
-      <h3>Quality Assurance Engineer P1/P2</h3>
-      <div>
-      </div>
-      <p>
-        October 2019 - August 2021
-      </p>
-      <ul>
-        <li>-Worked with other engineers to meet public release deadlines. Maintained updated testing knowledge through Qtest. Created automation testing to reduce manual QA time.</li>
-        <li>-Trained new developers/QA on the process and the product.</li>
-        <li>-Set up a nightly automation run against mock data in a testing environment.</li>
-        <li>-Set up notifications for the successes/failures of that nightly run to alert the team via Slack.</li>
-        <li>-Worked with developers on improvements and bugs.</li>
-        <li>-Ran scrum meetings when needed (setting up spikes and weighing tickets).</li>
-        <li>-Ran refinement meetings and handled team concerns.</li>
-        <li>-Created merge requests for automation code (Python) for new features before release.</li>
-        <li>-Wrote automation helpers to assist developers and myself when writing automation (e.g., a helper to pull the value of a text field called from a method).</li>
-        <li>-Created pre-automation functions to generate data via Json-rpc payloads.</li>
-        <li>-Jumped on calls/zooms with developers to show issues on the merge request.</li>
-        <li>-Worked with the Product Owner to discuss issues and improvements.</li>
-    </ul>    
-      <h3>Technical Support Expert Level 1/2(Blue Tier)</h3>
-      <div>
-      </div>
-      <p>
-        August 2015 - Octrober 2019
-      </p>
-      <ul>
-        <li>-As a Blue Tier Level 2, I deal with the company’s highest MRR (Monthly Recurring Revenue) MSP (Managed Services Providers).</li>
-        <li>-Work daily within a CLI.</li>
-        <li>-Achieved CompTIA Linux+ Certification.</li>
-        <li>-Dealt with multiple infrastructures.</li>
-        <li>-Worked with Puppet on our offsite nodes and nginx for load balancing.</li>
-        <li>-Troubleshot networking issues within a CLI.</li>
-        <li>-Debugged scripts using built-in tools within Linux.</li>
-        <li>-Created and debugged Bash/PHP scripts due to changes in environment or process.</li>
-        <li>-Developed training materials, conducted webinars, and authored wikis for user training and support. Received multiple recognitions, including attending Dattocon (our yearly company release panel). Handled onsite partner visits.</li>
-        <li>-Ran SQL queries within our database to verify data or remove it if needed.</li>
-        <li>-Set up and maintained our VMware cluster and storage.</li>
-        <li>-Helped restore and resolve issues within multiple operating systems.</li>
-        <li>-Worked with Problem Analysts on new issues and how QA can address them going forward.</li>
-    </ul>    
-    <hr class="dashed">
-      <h3><br>Unisys</br>
-      Service Desk Level One</h3>
-      <div>
-        <a href="https://www.unisys.com/" target="_blank">Link to the company</a>
-      </div>
-      <p>
-        January 2014 - August 2015
-      </p>
-      <ul>
-        <li>-Handled inbound technical calls from end users from multiple colleges and businesses.</li>
-        <li>-Managed end user accounts in Lync/Exchange servers, Active Directory, PGP Encryption, Cisco VOIP, Avaya, Juniper/Cisco VPN, CampusVue, and GoTo Meeting.</li>
-        <li>-Drafted technical documents, including whitepapers, user manuals, implementation documentation, and support base entries.</li>
-        <li>-Internationally trained to handle MOLEX calls.</li>
-        <li>-Maintained composure and patience in the face of difficult customer situations, applying de-escalation techniques and providing positive customer support.</li>
-        <li>-Consistently responded to customer service emails within the standard window for optimal response. Worked in multiple ticketing systems.</li>
-    </ul>    
-  </div>
-  </section>
-    <hr class="rounded1">
-  
-  <section id="projects">
-    <h2>My Projects</h2>
-      <div class="project">
-          <h3>Automation Data Graphing</h3>
-            <div>
-              <img class='pythonDataImage' src="Screenshot 2023-07-10 at 9.21.01 AM.png">
-              <img class='pythonDataImage' src="Screenshot 2023-07-10 at 9.20.52 AM.png">
+    <section class="technologies">
+        <h2>Skills</h2>
+        <div class="tech-grid">
+            <div class="tech-card">
+              <img src="images/python.svg" alt="Python Logo">
+              <span>Python</span>
             </div>
-              <p>
-                This project was something that didn't need to be done, but I wanted to learn more about showing data in a easy to read way to whenever automation is ran. For this 
-                I created a slackbot and setup the appropriate token/webhooks to post the message. When running the automation for the suite, I setup a autouse fixture to capture data at the end 
-                of the test("passed/failed/skipped"/"Length of test in second") and used <a href='https://matplotlib.org/'>matplotlib</a> and plotted the data and subplots and used <a href='https://slack.dev/python-slack-sdk/'>slack_sdk</a> to upload the file and inlay it with the 
-                main suite results. For the suite results(For the nightly automation) when running the nightly I `| tee results.txt` all the output to a .txt file and set a `after_script` in the pipeline
-                to parse the file and use Slacks BlockKitBuilder to setup the payload to send the data of the outcome of the nightly automation.
-                <br></br>
-                I think the next thing I'll do for this project is more data such as amount of clicks or actions performed and continue to learn more about <a href='https://jupyter.org/'>Jupyter</a> 
-              </p>
+            <div class="tech-card">
+              <img src="images/typescript.svg" alt="Typescript Logo">
+              <span>Typescript</span>
+            </div>
+            <div class="tech-card">
+              <img src="images/node-js.svg" alt="Node.js Logo">
+              <span>Node.js</span>
+            </div>
+            <div class="tech-card">
+              <img src="images/playwright-logo-png_seeklogo-435674.png" alt="Playwright Logo">
+              <span>Playwright</span>
+            </div>
+            <div class="tech-card">
+              <img src="images/cypress.svg" alt="Cypress Logo">
+              <span>Cypress</span>
+            </div>
+            <div class="tech-card">
+              <img src="images/selenium.svg" alt="Selenium Logo">
+              <span>Selenium</span>
+            </div>
+            <div class="tech-card">
+              <img src="images/postman.svg" alt="Postman Logo">
+              <span>Postman(API)</span>
+            </div>
+            <div class="tech-card">
+              <img src="images/wheelchair-symbol.svg" alt="Accessibility Logo">
+              <span>Accessibility Testing</span>
+            </div>
+            <div class="tech-card", data-tooltip="test">
+              <img src="images/performance-testing.svg" alt="Performance Logo">
+              <span>Performance Testing</span>
+            </div>
+            <div class="tech-card">
+              <img src="images/globe-showing-americas.svg" alt="I18n Logo">
+              <span>I18n</span>
+            </div>
+            <div class="tech-card">
+              <img src="images/lock.svg" alt="Security Logo">
+              <span>Security Testing</span>
+            </div>
+            <div class="tech-card">
+              <img src="images/intellij-idea.svg" alt="Intellij Logo">
+              <span>Pycharm/Aqua/VS</span>
+            </div>
+            <div class="tech-card">
+              <img src="images/gitlab.svg" alt="GitLab Logo">
+              <span>Github/Gitlab</span>
+            </div>
+            <div class="tech-card">
+              <img src="images/file-type-jenkins.svg" alt="Jenkins Logo">
+              <span>CI/CD</span>
+            </div>
+            <div class="tech-card">
+              <img src="images/testrail.png" alt="Test Case Logo">
+              <span>Test Cases</span>
+            </div>
+            <div class="tech-card">
+              <img src="images/agile-development.svg" alt="Agile Logo">
+              <span>Agile</span>
+            </div>
+            <div class="tech-card">
+              <img src="images/linux.svg" alt="Linux Logo">
+              <span>Linux</span>
+            </div>
+            <div class="tech-card">
+              <img src="images/jira.svg" alt="Jira Logo">
+              <span>Jira</span>
+            </div>
+            <div class="tech-card">
+              <img src="images/sql-database-generic.svg" alt="SQL Logo">
+              <span>SQL/PostgresSQL</span>
+            </div>
+            <div class="tech-card">
+              <img src="images/hammer.svg" alt="Manual QA Logo">
+              <span>Manual Validation</span>
+            </div>
         </div>
+    </section>
 
-
-      <hr class="dashed">
-
-      <div class="project">
-        <h3>Automating Pokemon Battles</h3>
-        <span><a href='https://github.com/NotLan/PokemonBattle' target="_blank">Link to Project</a></span>
-        <div>
-          <img class="pokemonImages" src='https://matthewluckow.com/wp-content/uploads/2021/06/screen-4.png'>
-          <img class="pokemonImages" src='https://matthewluckow.com/wp-content/uploads/2021/06/screen-1-1024x921.png'>
-          <img class="pokemonImages" src='https://matthewluckow.com/wp-content/uploads/2021/06/screen-3-1024x858.png'>
-        </div>
-        <p>
-          <br>This project was the first I used <a href="https://playwright.dev/python/" target="_blank">Playwright</a> and set it up to choose a random Pokemon to battle with and notate the statistics of the Pokemon to a .json file.</br>
-          This automation could be run headed/headless(Windowed or in the background).
-          <br></br>
-          What I want to do as I learn more is use the data and show win/lose ratios and maybe the probability of a certain Pokemon winning a battle.
-        </p>
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <a href="https://github.com/NotLan585/MonkeyType" target="_blank" class="projects-card-link">
+          <div class="projects-card">
+            <img src="images/MonkeyType.gif" alt="MonkeyType Gif">
+            <span>MonkeyType</span>
+          </div>
+        </a>
+        <a href="https://github.com/NotLan/PokemonBattle" target="_blank" class="projects-card-link">
+          <div class="projects-card">
+            <img src="images/pvpoke.gif" alt="PvPoke Gif">
+            <span>Pokemon Battle</span>
+          </div>
+        </a>
+          <div class="projects-card">
+            <img src="images/SlackBotGraph.png" alt="Slack Graph">
+            <span>SlackBot</span>
+          </div>
+          <a href="https://github.com/NotLan585?tab=repositories" target="_blank" class="projects-card-link">
+            <div class="projects-card">
+              <img src="images/IanJira.png" alt="Ian">
+              <span>Other Projects</span>
+            </div>
+          </a>
       </div>
-
-      <hr class="dashed">
-      
-      <div class="project">
-        <h3>Lululemon Scraper</h3>
-        <span><a href='https://github.com/NotLan/LuLuLemonScrape' target="_blank">Link to Project</a></span>
-        <div>
-          <img class="luluImages" src='https://images.lululemon.com/is/image/lululemon/LU9BAJS_062163_1?wid=1080&op_usm=0.5,2,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'>
-          <img class="luluImages" src='https://images.lululemon.com/is/image/lululemon/LU9AYNS_043715_1?wid=1080&op_usm=0.5,2,10,0&fmt=webp&qlt=80,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'>
-        </div>
-        <p>
-          This was a project I setup for my wife because Lululemon had a craze for fanny packs, sorry belt bags... So I set up a web scraper to let me know when a specific kind was in stock/was
-          able to ship and email me when it was.
-        </p>
-      </div>
-      <hr class="dashed">
-
-      <div class="project">
-        <h3>Rock Paper Scissors Bot</h3>
-        <span><a href='https://github.com/NotLan/RockPaperScissors' target="_blank"'>Link to Project</a></span>
-        <div class="rps">
-          <img class="rpsImages" src='Screenshot 2023-06-16 at 2.21.43 PM.png'>
-          <img class="rpsImages" src='Screenshot 2023-06-16 at 2.22.54 PM.png'>
-          <img class="rpsImages" src='Screenshot 2023-06-16 at 2.24.05 PM.png'>
-        </div>
-        <p>
-          Rock Paper Scissors was my first project, I wanted to create a game that would randomly select an option and give the user sass if they 
-          input an option wrong too many times. 
-          <br></br>
-          I kinda want to use the data of wins/ties/losses and graph them to the user for win/lose ratios and what option
-          had the best/worse result.
-        </p>
-      </div>
-
-      <hr class="dashed">
-      <div class="project">
-        <h3>Weather Notifier[WIP]</h3>
-          <span><a href='https://github.com/NotLan/WeatherNotifier' target="_blank">Link to Project</a></span>
-            <p>
-              This project is still a Work In Progress, but the idea would be to notify the user of any critical weather alerts for their current area
-              and notify them via email or text.
-            </p>
-  </section>
-  
-  <hr class="rounded2">
-
-  <section id="certifications">
-    <h2>Certifications</h3>
-    <br>
-      <h3>CompTIA Linux+ (Powered by LPI)</h3>
-      <img class="comptia" src="Screenshot 2023-06-16 at 9.11.30 PM.png"
-    </br>
-
-    <hr class="dashed">
-
-    <br>
-      <h3>OWASP Juice Shop</h3>
-      <br><a href="https://tryhackme.com/room/owaspjuiceshop" target="_blank">Link to Site</a></br>
-      <img class="owasp" src="Screenshot 2023-06-16 at 9.13.28 PM.png"
-    </br>
-
-    <hr class="dashed">
-
-    <br>
-      <h3>PluralSight</h3>
-      <br><a href="https://app.pluralsight.com/profile/Ian-Allheim" target="_blank">Link to my Profile</a></br>
-      <img class="pluralsight" src="Screenshot 2023-06-16 at 9.15.03 PM.png">
-    </br>
-
-    <hr class="dashed">
-
-    <br>
-      <h3>Codecademy</h3>
-      <br><a href="https://www.codecademy.com/profiles/iallheim" target="_blank">Link to Profile</a></br>
-      <img class="codecademy" src="Screenshot 2023-06-20 at 2.22.40 PM.png">
-    </br>
-    
-  </section>
-
-  <hr class="rounded3">
-
-  <section id="contact">
-    <h2>Contact Info</h2>
-    <div>    
-    <p>
-      <ul>
-        <li>
-          <strong> Ian.allheim@gmail.com </strong>
-        </li>
-      </ul>
-    </p>
-    <ul>
-      <br>
-        <li>
-          <a href="https://www.linkedin.com/in/ian-allheim/" target="_blank">Link to my linkedin</a>
-        </li>
-      </br>
-      <br>
-      <li>
-      <a href="https://github.com/NotLan" target="_blank">Link to my Github</a>
-        </li>
-      </br>
-      <br><strong>Links to other articles I'm in</strong></br>
-      <br>
-        <li>
-          <a href="https://www.iheartroc.com/work/ian-allheim/" target="_blank">iheartroc</a>
-        </li>
-      </br>
-      <br>
-        <li>
-          <a href="https://www.linkedin.com/posts/bryxinc_bryx911-rochesterbased-emergencyservices-activity-7072971855816478720--559?utm_source=share&utm_medium=member_desktop" target="_blank">Bryx Post</a>
-        </li>
-      </br>
-      <br>
-        <li>
-          <a href="https://www.datto.com/resource-downloads/PROVIDER_JAN18.pdf" target="_blank">Disaster Relief(Pages 7/8)</a>
-        </li>
-      </br>
-    </ul>
-  </div>
   </section>
 
-  <footer>
-    <p>&copy; 2023 My Portfolio. All rights reserved.</p>
-    <p>Made by Ian Allheim</p>
-  </footer>
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  @keyframes cloudAnimation {
-    from {
-      background-position: 0 0;
-    }
-    to {
-      background-position: 100% 0;
-    }
-  }
-  
-  header {
-    background-image: url('automated.gif');
-    background-repeat: no-repeat;
-    height: 550px;
-    background-position: right center;
-    background-color: #587f82;
-    color: rgb(255, 255, 255);
-    padding-top: 10px;
-    text-indent: 50px;
-  }
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-grid">
+        <a href="https://www.linkedin.com/in/ian-allheim/" target="_blank" class="contact-card-link">
+          <div class="contact-card">
+            <img src="images/linkedin.svg" alt="Linkedin Logo">
+            <span>Linkedin</span>
+          </div>
+        </a>
+        <a href="mailto:ian.allheim@gmail.com" target="_blank" class="contact-card-link">
+          <div class="contact-card">
+            <img src="images/gmail.svg" alt="Email Logo">
+            <span>Gmail</span>
+          </div>
+        </a>
+        <a href="discordapp.com/users/notlan585" target="_blank" class="contact-card-link">
+          <div class="contact-card">
+            <img src="images/discord.svg" alt="Discord Logo">
+            <span>Discord
+            </span>
+          </div>
+        </a>
+        <a href="https://leetcode.com/" target="_blank" class="contact-card-link">
+          <div class="contact-card">
+            <img src="images/leetcode.svg" alt="Leetcode Logo">
+            <span>LeetCode
+            </span>
+          </div>
+        </a>
+      </div>
+  </section>
 
-  @media (min-width: 100px) {
-  .header {
-    size: inherit;
-    }
-  }
-  body {
-    background-color: #556065;
-    color: #fff;
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 20p;  
-
-  }
-  
-  li a {
-    text-align: center;
-    padding: 10px 30px;
-    border-radius: 20px;
-    background-color: #556065;
-    color: #fff;
-    text-decoration: none;
-  }
-
-  li a:hover {
-    background-image: url('thisisfine.gif');
-    background-size: inherit;
-    background-position: center;
-    transition: ease-in .75s;
-    -webkit-text-fill-color: transparent;    
-  }
-
-  h2.aboutme {
-    font-size: 30px
-  }
-
-  hr.rounded1 {
-    border-top: 8px solid #587f82;
-    border-radius: 5px;
-  }
-
-  .pokemonImages {
-    width: 500px;
-    height: 500px;
-  }
-  
-  hr.dashed {
-    border-top: 5px dashed #bbb;
-  }
-
-  .luluImages {
-    width: 500px;
-    height: 500px;
-  }
-
-  .pythonDataImage {
-    width: 500px;
-    height: 500px;
-  }
-
-  .rpsImages {
-    width: 600px;
-    height: 500px;
-  }
-
-  .comptia {
-    width: 800px;
-    height: 600px;
-  }
-
-  .owasp {
-    width: 800px;
-    height: 600px;
-  }
-  
-  .pluralsight {
-    width: 800px;
-    height: 600px;
-  }
-
-  .codecademy {
-    width: 800px;
-    height: 600px;
-  }
-
-  hr.rounded2 {
-    border-top: 8px solid #587f82;
-    border-radius: 5px;
-  }
-
-  hr.rounded3 {
-    border-top: 8px solid #587f82;
-    border-radius: 5px;
-  }
-
-  .ian{
-    display: block;
-    margin: right;
-    width: 25%;
-  }
-
-  section {
-    padding: 20px;
-  }
-  
-  .project {
-    margin-bottom: 20px;
-  }
-  
-
-
-  .expandable-content {
-            display: none;
-            margin-top: 10px;
-        }
-        .expandable-content.open {
-            display: block;
-        }
-        .toggle-button {
-            cursor: pointer;
-            color: #fafafa;
-            text-decoration: underline;
-        }
-        .toggle-button:hover {
-            color: #0056b3;
-        }
-        .dashed {
-            border: 0;
-            border-top: 1px dashed #ccc;
-            margin: 10px 0;
-        }
-        
-  </style>
-
-<script>
-  document.querySelector('.toggle-button').addEventListener('click', function() {
-      var content = document.querySelector('.expandable-content');
-      if (content.classList.contains('open')) {
-          content.classList.remove('open');
-          this.textContent = 'Show Details';
-      } else {
-          content.classList.add('open');
-          this.textContent = 'Hide Details';
-      }
-  });
-</script>
 </body>
 </html>
