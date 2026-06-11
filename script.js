@@ -151,6 +151,23 @@ resizeCanvas();
 initParticles();
 animate();
 
+// ── Skills filter ──
+const filterBtns = document.querySelectorAll('.skill-filter');
+const techCards = document.querySelectorAll('.tech-card');
+
+filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+        techCards.forEach(card => {
+            const match = filter === 'all' || card.dataset.category === filter;
+            card.classList.toggle('dimmed', !match);
+        });
+    });
+});
+
 // ── Footer year ──
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();

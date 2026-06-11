@@ -355,6 +355,38 @@ h2 {
 }
 
 /* ─── Skills ─── */
+.skill-filters {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.skill-filter {
+    background: #161B22;
+    border: 1px solid #30363D;
+    color: #8B949E;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 7px 18px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.skill-filter:hover {
+    border-color: rgba(58, 123, 236, 0.4);
+    color: #E6EDF3;
+}
+
+.skill-filter.active {
+    background: linear-gradient(135deg, #3a7bec, #7c3aed);
+    border-color: transparent;
+    color: #fff;
+    box-shadow: 0 2px 14px rgba(58, 123, 236, 0.35);
+}
+
 .tech-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -371,8 +403,14 @@ h2 {
     gap: 10px;
     border: 1px solid #30363D;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    transition: background 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.2s;
+    transition: background 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s, opacity 0.25s;
     cursor: default;
+}
+
+.tech-card.dimmed {
+    opacity: 0.18;
+    transform: scale(0.96);
+    pointer-events: none;
 }
 
 .tech-card:hover {
