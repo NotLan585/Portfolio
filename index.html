@@ -3,288 +3,288 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SDET Portfolio</title>
+    <title>Ian Allheim — SDET Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <div class="logo">IA</div>
-    </header>
-
-    <section class="hero">
-        <div class="text">
-            <h1>Ian <span class="highlight">Allheim</span>,<br> Sr Software Developer in Test</h1>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">IA</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
-        <div class="avatar"><img src="images/Ian.jpeg"></div>
+    </nav>
+
+    <section class="hero" id="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-content">
+            <div class="text">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for opportunities
+                </div>
+                <h1>Ian <span class="highlight">Allheim</span></h1>
+                <p class="hero-subtitle"><span id="typewriter"></span><span class="cursor">|</span></p>
+                <p class="hero-desc">Automation-first SDET with 7+ years building test frameworks that ship confidence at scale.</p>
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn-primary">View Projects</a>
+                    <a href="#contact" class="btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="avatar-wrapper">
+                <div class="avatar-glow"></div>
+                <div class="avatar">
+                    <img src="images/Ian.jpeg" alt="Ian Allheim">
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="pages">
-        <div class="card"> 
+    <section class="pages" id="about" data-reveal>
+        <div class="card">
             <h3>About Me 👋🏻</h3>
             <p>With extensive experience in software testing, quality assurance, and automation frameworks, I specialize in designing and delivering robust, scalable testing solutions. Proficient in Python, JavaScript, and Node.js, I have built and maintained automated test suites that ensure exceptional software quality and reliability. I'm skilled at uncovering critical issues, stress-testing systems, and streamlining processes to boost efficiency. Passionate about automation, I continuously seek opportunities to eliminate manual bottlenecks and create smarter, faster workflows that drive better results.</p>
         </div>
     </section>
 
-    <section class="technologies">
+    <section class="technologies" id="skills" data-reveal>
         <h2>Skills</h2>
         <div class="tech-grid">
             <div class="tech-card">
               <img src="images/python.svg" alt="Python Logo">
               <span>Python</span>
-                <div class="tooltip">
-                    I'm very proficient in Python with multiple years of creating/maintaining automation suites (Selenium/Playwright).
-                </div>
+              <div class="tooltip">I'm very proficient in Python with multiple years of creating/maintaining automation suites (Selenium/Playwright).</div>
             </div>
             <div class="tech-card">
               <img src="images/typescript.svg" alt="Typescript Logo">
               <span>Typescript</span>
-                <div class="tooltip">
-                    I've worked with typescript for 2-3 years specifically with Playwright.
-                </div>
+              <div class="tooltip">I've worked with Typescript for 2-3 years specifically with Playwright.</div>
             </div>
             <div class="tech-card">
               <img src="images/node-js.svg" alt="Node.js Logo">
               <span>Node.js</span>
-                <div class="tooltip">
-                    I've worked with Node.js for 2-3 years specifically with Playwright.
-                </div>
+              <div class="tooltip">I've worked with Node.js for 2-3 years specifically with Playwright.</div>
             </div>
             <div class="tech-card">
               <img src="images/playwright-logo-png_seeklogo-435674.png" alt="Playwright Logo">
               <span>Playwright</span>
-                <div class="tooltip">
-                    I've worked with Playwright for 5 years Creating and updating test suites.
-                </div>
+              <div class="tooltip">I've worked with Playwright for 5 years creating and updating test suites.</div>
             </div>
             <div class="tech-card">
               <img src="images/cypress.svg" alt="Cypress Logo">
               <span>Cypress</span>
-                <div class="tooltip">
-                    I've worked with Playwright for 1 year Creating a proof of concept for automation.
-                </div>
+              <div class="tooltip">I've worked with Cypress for 1 year creating a proof of concept for automation.</div>
             </div>
             <div class="tech-card">
               <img src="images/selenium.svg" alt="Selenium Logo">
               <span>Selenium</span>
-                <div class="tooltip">
-                    I've worked with Seleneium for 6 years Creating and updating test suites in multiple projects.
-                </div>
+              <div class="tooltip">I've worked with Selenium for 6 years creating and updating test suites in multiple projects.</div>
             </div>
             <div class="tech-card">
               <img src="images/postman.svg" alt="Postman Logo">
-              <span>Postman(API)</span>
-                <div class="tooltip">
-                    I've worked with Postman for 7 years Testing API and creating Newman automation.
-                </div>
+              <span>Postman (API)</span>
+              <div class="tooltip">I've worked with Postman for 7 years testing APIs and creating Newman automation.</div>
             </div>
             <div class="tech-card">
               <img src="images/wheelchair-symbol.svg" alt="Accessibility Logo">
               <span>Accessibility Testing</span>
-                <div class="tooltip">
-                    I've completed automation to meet WCAG guidelines.
-                </div>
+              <div class="tooltip">I've completed automation to meet WCAG guidelines.</div>
             </div>
-            <div class="tech-card", title="test">
+            <div class="tech-card">
               <img src="images/locust.png" alt="Performance Logo">
-              <span>Load Testing(Locust)</span>
-                <div class="tooltip">
-                    I've worked with Locust.io for 1-2 years creating and writing load performance tests.
-                </div>
+              <span>Load Testing (Locust)</span>
+              <div class="tooltip">I've worked with Locust.io for 1-2 years creating and writing load performance tests.</div>
             </div>
             <div class="tech-card">
               <img src="images/globe-showing-americas.svg" alt="I18n Logo">
               <span>I18n</span>
-                <div class="tooltip">
-                    I've worked with and managed teams to convert/test sites to i18n(With automation testing).
-                </div>
+              <div class="tooltip">I've worked with and managed teams to convert/test sites to i18n (with automation testing).</div>
             </div>
             <div class="tech-card">
               <img src="images/lock.svg" alt="Security Logo">
               <span>Security Testing</span>
-                <div class="tooltip">
-                    I've gone through capture the flag events and always love to find a exploit.
-                </div>
+              <div class="tooltip">I've gone through capture the flag events and always love to find an exploit.</div>
             </div>
             <div class="tech-card">
               <img src="images/intellij-idea.svg" alt="Intellij Logo">
-              <span>Pycharm/Aqua/VS</span>
-                <div class="tooltip">
-                    Pycharm CE is so far my favorite.
-                </div>
+              <span>PyCharm / Aqua / VS</span>
+              <div class="tooltip">PyCharm CE is so far my favorite IDE.</div>
             </div>
             <div class="tech-card">
               <img src="images/gitlab.svg" alt="GitLab Logo">
-              <span>Github/Gitlab</span>
-                <div class="tooltip">
-                    I've created repo's and reviewed PR's and creates pipelines and nightly jobs for automation.
-                </div>
+              <span>GitHub / GitLab</span>
+              <div class="tooltip">I've created repos, reviewed PRs, and created pipelines and nightly jobs for automation.</div>
             </div>
             <div class="tech-card">
               <img src="images/file-type-jenkins.svg" alt="Jenkins Logo">
               <span>CI/CD</span>
-                <div class="tooltip">
-                    I've created continuous integration into automation/projects to validate code changes.
-                </div>
+              <div class="tooltip">I've created continuous integration into automation/projects to validate code changes.</div>
             </div>
             <div class="tech-card">
               <img src="images/testrail.png" alt="Test Case Logo">
               <span>Test Cases</span>
-                <div class="tooltip">
-                    I've worked with Zephry/Test Rails/ and numerous other apps to create/maintain test cases.
-                </div>
+              <div class="tooltip">I've worked with Zephyr/TestRails and numerous other apps to create/maintain test cases.</div>
             </div>
             <div class="tech-card">
               <img src="images/agile-development.svg" alt="Agile Logo">
               <span>Agile</span>
-                <div class="tooltip">
-                    I'm familiar with Agile/Scrum and even run them retro's and stand-ups.
-                </div>
+              <div class="tooltip">I'm familiar with Agile/Scrum and have run retros and stand-ups.</div>
             </div>
             <div class="tech-card">
               <img src="images/linux.svg" alt="Linux Logo">
               <span>Linux</span>
-                <div class="tooltip">
-                    I'm COMPTIA + 103/104 Linux Certified
-                </div>
+              <div class="tooltip">I'm CompTIA Linux+ (LX0-103/104) certified.</div>
             </div>
             <div class="tech-card">
               <img src="images/jira.svg" alt="Jira Logo">
               <span>Jira</span>
-                <div class="tooltip">
-                    I've worked and managed jira for sprints and kanbans
-                </div>
+              <div class="tooltip">I've worked and managed Jira for sprints and kanbans.</div>
             </div>
             <div class="tech-card">
               <img src="images/sql-database-generic.svg" alt="SQL Logo">
-              <span>SQL/PostgresSQL</span>
-                <div class="tooltip">
-                    I've had multiple interactions/experience with sql and nosql databases.
-                </div>
+              <span>SQL / PostgreSQL</span>
+              <div class="tooltip">I've had multiple interactions/experience with SQL and NoSQL databases.</div>
             </div>
             <div class="tech-card">
               <img src="images/hammer.svg" alt="Manual QA Logo">
               <span>Manual Validation</span>
-                <div class="tooltip">
-                    Even though I believe automation is the key to a healthy pipeline manual testing will still always be needed.
-                </div>
+              <div class="tooltip">Even though automation is key, manual testing will always have a place in a healthy pipeline.</div>
             </div>
             <div class="tech-card">
               <img src="images/slack.svg" alt="Slack Logo">
               <span>Slack SDK</span>
-                <div class="tooltip">
-                    I've created slackbots for nightly automation runs to notify the team of statuses.
-                </div>
+              <div class="tooltip">I've created Slack bots for nightly automation runs to notify the team of statuses.</div>
             </div>
             <div class="tech-card">
               <img src="images/clickup.svg" alt="Clickup Logo">
-              <span>Clickup</span>
-                <div class="tooltip">
-                    I've created clickup tickets and sprints for my team.
-                </div>
+              <span>ClickUp</span>
+              <div class="tooltip">I've created ClickUp tickets and sprints for my team.</div>
             </div>
             <div class="tech-card">
               <img src="images/reportportal_logo.jpeg" alt="Report Portal Logo">
               <span>Report Portal</span>
-                <div class="tooltip">
-                    I've setup report portal(Self hosted) and sent runs to it, to track flakiness and runs over time.
-                </div>
+              <div class="tooltip">I've set up Report Portal (self-hosted) and sent runs to it to track flakiness over time.</div>
             </div>
             <div class="tech-card">
               <img src="images/datadog.svg" alt="Datadog Logo">
               <span>Datadog</span>
-                <div class="tooltip">
-                    I've worked with datadog for logging bugs and also user heat maps.
-                </div>
+              <div class="tooltip">I've worked with Datadog for logging bugs and analyzing user heat maps.</div>
             </div>
         </div>
     </section>
 
-    <section class="projects">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <a href="https://github.com/NotLan585/MonkeyType" target="_blank" class="projects-card-link">
-          <div class="projects-card">
-            <img src="images/MonkeyType.gif" alt="MonkeyType Gif">
-            <span>MonkeyType (Selenium)</span>
-          </div>
-        </a>
-        <a href="https://github.com/NotLan/PokemonBattle" target="_blank" class="projects-card-link">
-          <div class="projects-card">
-            <img src="images/pvpoke.gif" alt="PvPoke Gif">
-            <span>Pokemon Battle (Playwright)</span>
-          </div>
-        </a>
-        <a href="https://matplotlib.org/" target="_blank" class="projects-card-link">
-          <div class="projects-card">
-            <img src="images/SlackBotGraph.png" alt="Slack Graph">
-            <span>Slack Bots (Panda and Matplotlib)</span>
-          </div>
-        </a>
-        <a href="https://github.com/NotLan585/BallTracker" target="_blank" class="projects-card-link">
-          <div class="projects-card">
-            <img src="images/RedBall-ezgif.com-video-to-gif-converter.gif" alt="red Ball Tracker">
-            <span>Red Ball Tracker (OpenCV)</span>
-          </div>
-        </a>
-      </div>
-  </section>
-
-  <section class="certifications">
-    <h2>Certifications</h2>
-    <div class="certifications-grid">
-      <a href="https://www.comptia.org/certifications/linux" target="_blank" class="certifications-card-link">
-        <div class="certifications-card">
-          <img src="images/Comptialinuxcert.png" alt="CompTIA Logo">
-          <span>CompTIA Linux+</span>
+    <section class="projects" id="projects" data-reveal>
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <a href="https://github.com/NotLan585/MonkeyType" target="_blank" class="projects-card-link">
+                <div class="projects-card">
+                    <img src="images/MonkeyType.gif" alt="MonkeyType automation demo">
+                    <div class="project-overlay">
+                        <span class="project-title">MonkeyType (Selenium)</span>
+                        <span class="project-cta">View on GitHub →</span>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/NotLan/PokemonBattle" target="_blank" class="projects-card-link">
+                <div class="projects-card">
+                    <img src="images/pvpoke.gif" alt="Pokemon PvP battle automation demo">
+                    <div class="project-overlay">
+                        <span class="project-title">Pokemon Battle (Playwright)</span>
+                        <span class="project-cta">View on GitHub →</span>
+                    </div>
+                </div>
+            </a>
+            <a href="https://matplotlib.org/" target="_blank" class="projects-card-link">
+                <div class="projects-card">
+                    <img src="images/SlackBotGraph.png" alt="Slack bot graph output">
+                    <div class="project-overlay">
+                        <span class="project-title">Slack Bots (Pandas & Matplotlib)</span>
+                        <span class="project-cta">View Project →</span>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/NotLan585/BallTracker" target="_blank" class="projects-card-link">
+                <div class="projects-card">
+                    <img src="images/RedBall-ezgif.com-video-to-gif-converter.gif" alt="Red ball computer vision tracker">
+                    <div class="project-overlay">
+                        <span class="project-title">Red Ball Tracker (OpenCV)</span>
+                        <span class="project-cta">View on GitHub →</span>
+                    </div>
+                </div>
+            </a>
         </div>
-      </a>
-      <a href="https://www.tsia.com/" target="_blank" class="certifications-card-link">
-        <div class="certifications-card">
-          <img src="images/TSIALogo.jpeg" alt="TSIA Logo">
-          <span>TSIA</span>
-        </div>
-      </a>
-      <a href="https://www.codecademy.com/profiles/iallheim" target="_blank" class="certifications-card-link">
-        <div class="certifications-card">
-          <img src="images/codecademy.svg" alt="codecademy Logo">
-          <span>Codecademy</span>
-        </div>
-      </a>
-    </div>
-  </section>
+    </section>
 
-    <section class="contact">
-      <h2>Contact Me</h2>
-      <div class="contact-grid">
-        <a href="https://www.linkedin.com/in/ian-allheim/" target="_blank" class="contact-card-link">
-          <div class="contact-card">
-            <img src="images/linkedin.svg" alt="Linkedin Logo">
-            <span>Linkedin</span>
-          </div>
-        </a>
-        <a href="mailto:ian.allheim@gmail.com" target="_blank" class="contact-card-link">
-          <div class="contact-card">
-            <img src="images/gmail.svg" alt="Email Logo">
-            <span>Gmail</span>
-          </div>
-        </a>
-        <a href="https://discord.com/" target="_blank" class="contact-card-link">
-          <div class="contact-card">
-            <img src="images/discord.svg" alt="Discord Logo">
-            <span>Discord(notlan585)
-            </span>
-          </div>
-        </a>
-        <a href="https://github.com/NotLan585" target="_blank" class="contact-card-link">
-          <div class="contact-card">
-            <img src="images/gitlab.svg" alt="Git Logo">
-            <span>Gitlab
-            </span>
-          </div>
-        </a>
-      </div>
-  </section>
+    <section class="certifications" id="certifications" data-reveal>
+        <h2>Certifications</h2>
+        <div class="certifications-grid">
+            <a href="https://www.comptia.org/certifications/linux" target="_blank" class="certifications-card-link">
+                <div class="certifications-card">
+                    <img src="images/Comptialinuxcert.png" alt="CompTIA Logo">
+                    <span>CompTIA Linux+</span>
+                </div>
+            </a>
+            <a href="https://www.tsia.com/" target="_blank" class="certifications-card-link">
+                <div class="certifications-card">
+                    <img src="images/TSIALogo.jpeg" alt="TSIA Logo">
+                    <span>TSIA</span>
+                </div>
+            </a>
+            <a href="https://www.codecademy.com/profiles/iallheim" target="_blank" class="certifications-card-link">
+                <div class="certifications-card">
+                    <img src="images/codecademy.svg" alt="Codecademy Logo">
+                    <span>Codecademy</span>
+                </div>
+            </a>
+        </div>
+    </section>
 
+    <section class="contact" id="contact" data-reveal>
+        <h2>Contact Me</h2>
+        <div class="contact-grid">
+            <a href="https://www.linkedin.com/in/ian-allheim/" target="_blank" class="contact-card-link">
+                <div class="contact-card">
+                    <img src="images/linkedin.svg" alt="LinkedIn Logo">
+                    <span>LinkedIn</span>
+                </div>
+            </a>
+            <a href="mailto:ian.allheim@gmail.com" class="contact-card-link">
+                <div class="contact-card">
+                    <img src="images/gmail.svg" alt="Gmail Logo">
+                    <span>Gmail</span>
+                </div>
+            </a>
+            <a href="https://discord.com/" target="_blank" class="contact-card-link">
+                <div class="contact-card">
+                    <img src="images/discord.svg" alt="Discord Logo">
+                    <span>Discord (notlan585)</span>
+                </div>
+            </a>
+            <a href="https://github.com/NotLan585" target="_blank" class="contact-card-link">
+                <div class="contact-card">
+                    <img src="images/gitlab.svg" alt="GitHub Logo">
+                    <span>GitHub</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Built by Ian Allheim · <span id="year"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
